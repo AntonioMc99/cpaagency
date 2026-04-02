@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Apply Now | Certified Protection Agency</title>
+  <meta name="description" content="Apply to join the Certified Protection Agency team. Submit your employee application online — armed security, unarmed security, patrol, event security, and bodyguard positions available." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- TOPBAR -->
+  <div class="topbar">
+    <div class="wrap">
+      <div class="topbar-links">
+        <a href="tel:2143779391">📞 214-377-9391</a>
+        <a href="mailto:cpagency23@outlook.com">✉ cpagency23@outlook.com</a>
+      </div>
+      <span class="topbar-badge">TxDPS Licensed · C28514701</span>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="index.html" class="brand">
+        <img src="images/cpalogo2.jpeg" alt="Certified Protection Agency Logo" class="brand-logo" />
+        <div class="brand-text">
+          <span class="brand-name">Certified Protection Agency</span>
+          <span class="brand-tag">Prompt &amp; Reliable</span>
+        </div>
+      </a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="apply.html" class="active">Apply</a></li>
+          <li><a href="contact.html" class="btn-primary" style="padding:0.55rem 1.4rem;font-size:0.9rem;">Book Now</a></li>
+        </ul>
+      </nav>
+      <button id="menu-toggle" class="hamburger" aria-label="Toggle menu">☰</button>
+    </div>
+    <nav id="mobile-menu" class="mobile-menu hidden">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="apply.html" class="active">Apply</a>
+      <a href="contact.html" style="color:var(--gold);font-weight:700;">Book Now →</a>
+    </nav>
+  </header>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <h1>Join the <span>CPA Team</span></h1>
+    <p>Fill out the application below. All submissions are sent directly to our hiring team.</p>
+    <div class="gold-line"></div>
+  </div>
+
+  <!-- APPLICATION FORM -->
+  <section class="section">
+    <div class="section-inner">
+      <div class="app-form-wrap">
+
+        <form
+          id="app-form"
+          action="https://formspree.io/f/xpqojalk"
+          method="POST"
+          enctype="multipart/form-data"
+        >
+          <!-- Hidden routing -->
+          <input type="hidden" name="_subject" value="New CPA Employee Application" />
+          <input type="hidden" name="_replyto" value="cpagency23@outlook.com" />
+
+          <!-- ── SECTION 1: PERSONAL INFORMATION ── -->
+          <div class="app-section">
+            <div class="app-section-title">🪪 Personal Information</div>
+
+            <div class="app-grid app-grid-3">
+              <div class="app-field">
+                <label>First Name *</label>
+                <input type="text" name="first_name" placeholder="First Name" required />
+              </div>
+              <div class="app-field">
+                <label>Middle Initial</label>
+                <input type="text" name="middle_initial" placeholder="M.I." maxlength="2" />
+              </div>
+              <div class="app-field">
+                <label>Last Name *</label>
+                <input type="text" name="last_name" placeholder="Last Name" required />
+              </div>
+            </div>
+
+            <div class="app-grid app-grid-2" style="margin-top:1rem;">
+              <div class="app-field">
+                <label>Email *</label>
+                <input type="email" name="email" placeholder="your@email.com" required />
+              </div>
+              <div class="app-field">
+                <label>Phone Number *</label>
+                <input type="tel" name="phone" placeholder="(XXX) XXX-XXXX" required />
+              </div>
+              <div class="app-field">
+                <label>Social Security Number</label>
+                <input type="text" name="ssn" placeholder="XXX-XX-XXXX" />
+              </div>
+              <div class="app-field">
+                <label>Date of Birth</label>
+                <input type="date" name="dob" />
+              </div>
+            </div>
+
+            <div class="app-grid app-grid-2" style="margin-top:1rem;">
+              <div class="app-field full">
+                <label>Address *</label>
+                <input type="text" name="address" placeholder="Street Address" required />
+              </div>
+              <div class="app-field">
+                <label>City</label>
+                <input type="text" name="city" placeholder="City" />
+              </div>
+              <div class="app-field">
+                <label>State / Zip Code</label>
+                <input type="text" name="state_zip" placeholder="State, ZIP" />
+              </div>
+              <div class="app-field">
+                <label>Desired Position *</label>
+                <select name="desired_position" required>
+                  <option value="" disabled selected>Select a position</option>
+                  <option>Armed Security Officer</option>
+                  <option>Unarmed Security Officer</option>
+                  <option>Patrol Officer</option>
+                  <option>Event Security</option>
+                  <option>Personal Protection / Bodyguard</option>
+                  <option>Business & Property Security</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="app-field">
+                <label>Desired Pay ($/hr)</label>
+                <input type="text" name="desired_pay" placeholder="e.g. $18/hr" />
+              </div>
+            </div>
+
+            <div class="app-grid" style="margin-top:1.2rem;gap:0.8rem;">
+              <div class="app-yes-no">
+                <span class="app-yes-no-q">Do you have a Texas Security License?</span>
+                <div class="app-yes-no-btns">
+                  <label><input type="radio" name="tx_license" value="Yes" /> Yes</label>
+                  <label><input type="radio" name="tx_license" value="No" /> No</label>
+                </div>
+              </div>
+              <div class="app-field">
+                <label>If Yes, list license details</label>
+                <input type="text" name="tx_license_details" placeholder="License type / number" />
+              </div>
+              <div class="app-yes-no">
+                <span class="app-yes-no-q">Are you legally eligible for employment in the U.S.?</span>
+                <div class="app-yes-no-btns">
+                  <label><input type="radio" name="us_eligible" value="Yes" required /> Yes</label>
+                  <label><input type="radio" name="us_eligible" value="No" /> No</label>
+                </div>
+              </div>
+              <div class="app-yes-no">
+                <span class="app-yes-no-q">Type of Position?</span>
+                <div class="app-yes-no-btns">
+                  <label><input type="radio" name="position_type" value="Full-Time" /> Full-Time</label>
+                  <label><input type="radio" name="position_type" value="Part-Time" /> Part-Time</label>
+                </div>
+              </div>
+              <div class="app-yes-no">
+                <span class="app-yes-no-q">Are you willing to work overtime?</span>
+                <div class="app-yes-no-btns">
+                  <label><input type="radio" name="overtime" value="Yes" /> Yes</label>
+                  <label><input type="radio" name="overtime" value="No" /> No</label>
+                </div>
+              </div>
+              <div class="app-yes-no">
+                <span class="app-yes-no-q">Do you have reliable transportation?</span>
+                <div class="app-yes-no-btns">
+                  <label><input type="radio" name="transportation" value="Yes" /> Yes</label>
+                  <label><input type="radio" name="transportation" value="No" /> No</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── SECTION 2: EMPLOYMENT HISTORY ── -->
+          <div class="app-section">
+            <div class="app-section-title">💼 Employment History</div>
+
+            <div class="employer-block">
+              <h4>Previous Employer #1</h4>
+              <div class="app-grid app-grid-2">
+                <div class="app-field">
+                  <label>Employer Name</label>
+                  <input type="text" name="emp1_name" placeholder="Company Name" />
+                </div>
+                <div class="app-field">
+                  <label>Contact Phone</label>
+                  <input type="tel" name="emp1_phone" placeholder="(XXX) XXX-XXXX" />
+                </div>
+                <div class="app-field">
+                  <label>Start Date</label>
+                  <input type="date" name="emp1_start" />
+                </div>
+                <div class="app-field">
+                  <label>End Date</label>
+                  <input type="date" name="emp1_end" />
+                </div>
+                <div class="app-field full">
+                  <label>Address</label>
+                  <input type="text" name="emp1_address" placeholder="Street Address" />
+                </div>
+                <div class="app-field">
+                  <label>City / State / Zip</label>
+                  <input type="text" name="emp1_city_state_zip" placeholder="City, State ZIP" />
+                </div>
+                <div class="app-field">
+                  <label>Pay Rate</label>
+                  <input type="text" name="emp1_pay" placeholder="$XX/hr" />
+                </div>
+                <div class="app-field">
+                  <label>Job Position</label>
+                  <input type="text" name="emp1_position" placeholder="Your title/role" />
+                </div>
+                <div class="app-field full">
+                  <label>Reason for Leaving</label>
+                  <input type="text" name="emp1_reason" placeholder="Reason for leaving" />
+                </div>
+              </div>
+            </div>
+
+            <div class="employer-block">
+              <h4>Previous Employer #2</h4>
+              <div class="app-grid app-grid-2">
+                <div class="app-field">
+                  <label>Employer Name</label>
+                  <input type="text" name="emp2_name" placeholder="Company Name" />
+                </div>
+                <div class="app-field">
+                  <label>Contact Phone</label>
+                  <input type="tel" name="emp2_phone" placeholder="(XXX) XXX-XXXX" />
+                </div>
+                <div class="app-field">
+                  <label>Start Date</label>
+                  <input type="date" name="emp2_start" />
+                </div>
+                <div class="app-field">
+                  <label>End Date</label>
+                  <input type="date" name="emp2_end" />
+                </div>
+                <div class="app-field full">
+                  <label>Address</label>
+                  <input type="text" name="emp2_address" placeholder="Street Address" />
+                </div>
+                <div class="app-field">
+                  <label>City / State / Zip</label>
+                  <input type="text" name="emp2_city_state_zip" placeholder="City, State ZIP" />
+                </div>
+                <div class="app-field">
+                  <label>Pay Rate</label>
+                  <input type="text" name="emp2_pay" placeholder="$XX/hr" />
+                </div>
+                <div class="app-field">
+                  <label>Job Position</label>
+                  <input type="text" name="emp2_position" placeholder="Your title/role" />
+                </div>
+                <div class="app-field full">
+                  <label>Reason for Leaving</label>
+                  <input type="text" name="emp2_reason" placeholder="Reason for leaving" />
+                </div>
+              </div>
+            </div>
+
+            <div class="app-grid" style="gap:0.8rem;margin-top:0.5rem;">
+              <div class="app-field">
+                <label>How did you hear about CPA?</label>
+                <input type="text" name="heard_about" placeholder="e.g. Instagram, referral, Google..." />
+              </div>
+              <div class="app-yes-no">
+                <span class="app-yes-no-q">Do you have any Law Enforcement experience?</span>
+                <div class="app-yes-no-btns">
+                  <label><input type="radio" name="law_enforcement" value="Yes" /> Yes</label>
+                  <label><input type="radio" name="law_enforcement" value="No" /> No</label>
+                </div>
+              </div>
+              <div class="app-field">
+                <label>If Yes, how many years?</label>
+                <input type="text" name="law_enforcement_years" placeholder="Years of experience" />
+              </div>
+              <div class="app-yes-no">
+                <span class="app-yes-no-q">Do you have any security experience?</span>
+                <div class="app-yes-no-btns">
+                  <label><input type="radio" name="security_exp" value="Yes" /> Yes</label>
+                  <label><input type="radio" name="security_exp" value="No" /> No</label>
+                </div>
+              </div>
+              <div class="app-field">
+                <label>If Yes, how many years?</label>
+                <input type="text" name="security_exp_years" placeholder="Years of experience" />
+              </div>
+            </div>
+          </div>
+
+          <!-- ── SECTION 3: ADDITIONAL QUALIFICATIONS ── -->
+          <div class="app-section">
+            <div class="app-section-title">⚙️ Additional Qualifications</div>
+
+            <div class="app-grid" style="gap:0.8rem;">
+              <div class="app-yes-no">
+                <span class="app-yes-no-q">Are you able to work 8 or 12-hour shifts?</span>
+                <div class="app-yes-no-btns">
+                  <label><input type="radio" name="shifts" value="Yes" /> Yes</label>
+                  <label><input type="radio" name="shifts" value="No" /> No</label>
+                </div>
+              </div>
+              <div class="app-yes-no">
+                <span class="app-yes-no-q">Can you drive a vehicle continuously for 8 or 12 hours?</span>
+                <div class="app-yes-no-btns">
+                  <label><input type="radio" name="drive_long" value="Yes" /> Yes</label>
+                  <label><input type="radio" name="drive_long" value="No" /> No</label>
+                </div>
+              </div>
+              <div class="app-yes-no">
+                <span class="app-yes-no-q">Are you able to lift 25 lbs or more?</span>
+                <div class="app-yes-no-btns">
+                  <label><input type="radio" name="lift" value="Yes" /> Yes</label>
+                  <label><input type="radio" name="lift" value="No" /> No</label>
+                </div>
+              </div>
+              <div class="app-yes-no">
+                <span class="app-yes-no-q">Do you have a Full Duty Belt?</span>
+                <div class="app-yes-no-btns">
+                  <label><input type="radio" name="duty_belt" value="Yes" /> Yes</label>
+                  <label><input type="radio" name="duty_belt" value="No" /> No</label>
+                </div>
+              </div>
+              <div class="app-yes-no">
+                <span class="app-yes-no-q">If you have a Level 3 Commission Card, do you have a firearm?</span>
+                <div class="app-yes-no-btns">
+                  <label><input type="radio" name="has_firearm" value="Yes" /> Yes</label>
+                  <label><input type="radio" name="has_firearm" value="No" /> No</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="app-grid app-grid-4" style="margin-top:1rem;">
+              <div class="app-field">
+                <label>Firearm Make</label>
+                <input type="text" name="firearm_make" placeholder="Make" />
+              </div>
+              <div class="app-field">
+                <label>Firearm Model</label>
+                <input type="text" name="firearm_model" placeholder="Model" />
+              </div>
+              <div class="app-field">
+                <label>Caliber</label>
+                <input type="text" name="firearm_caliber" placeholder="Caliber" />
+              </div>
+              <div class="app-field">
+                <label>Serial #</label>
+                <input type="text" name="firearm_serial" placeholder="Serial #" />
+              </div>
+            </div>
+
+            <div class="app-grid" style="margin-top:1rem;gap:0.8rem;">
+              <div class="app-yes-no">
+                <span class="app-yes-no-q">Do you currently take illegal drugs?</span>
+                <div class="app-yes-no-btns">
+                  <label><input type="radio" name="illegal_drugs" value="Yes" /> Yes</label>
+                  <label><input type="radio" name="illegal_drugs" value="No" /> No</label>
+                </div>
+              </div>
+              <div class="app-yes-no">
+                <span class="app-yes-no-q">Would you be willing to take a drug test?</span>
+                <div class="app-yes-no-btns">
+                  <label><input type="radio" name="drug_test" value="Yes" /> Yes</label>
+                  <label><input type="radio" name="drug_test" value="No" /> No</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="app-grid app-grid-4" style="margin-top:1rem;">
+              <div class="app-field">
+                <label>Shirt Size</label>
+                <select name="shirt_size">
+                  <option value="" disabled selected>Select</option>
+                  <option>XS</option><option>S</option><option>M</option>
+                  <option>L</option><option>XL</option><option>XXL</option><option>3XL</option>
+                </select>
+              </div>
+              <div class="app-field">
+                <label>Pants Size</label>
+                <input type="text" name="pants_size" placeholder='e.g. 34x32' />
+              </div>
+              <div class="app-field">
+                <label>Black Boots?</label>
+                <select name="black_boots">
+                  <option value="" disabled selected>Select</option>
+                  <option>Yes</option><option>No</option>
+                </select>
+              </div>
+              <div class="app-field">
+                <label>Ballistic Vest?</label>
+                <select name="ballistic_vest">
+                  <option value="" disabled selected>Select</option>
+                  <option>Yes</option><option>No</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="app-grid app-grid-2" style="margin-top:1rem;">
+              <div class="app-field">
+                <label>Special Skills / Abilities</label>
+                <input type="text" name="special_skills" placeholder="List any special skills" />
+              </div>
+              <div class="app-field">
+                <label>Licenses &amp; Certificates</label>
+                <input type="text" name="licenses_certs" placeholder="List any licenses or certificates" />
+              </div>
+            </div>
+          </div>
+
+          <!-- ── SECTION 4: MILITARY EXPERIENCE ── -->
+          <div class="app-section">
+            <div class="app-section-title">🎖 Military Experience</div>
+            <div class="app-grid" style="gap:0.8rem;">
+              <div class="app-yes-no">
+                <span class="app-yes-no-q">Are you or have you been a member of the Armed Forces?</span>
+                <div class="app-yes-no-btns">
+                  <label><input type="radio" name="military" value="Yes" /> Yes</label>
+                  <label><input type="radio" name="military" value="No" /> No</label>
+                </div>
+              </div>
+            </div>
+            <div class="app-grid app-grid-2" style="margin-top:1rem;">
+              <div class="app-field">
+                <label>Branch</label>
+                <input type="text" name="military_branch" placeholder="e.g. Army, Navy, Marines..." />
+              </div>
+              <div class="app-field">
+                <label>Type of Discharge</label>
+                <input type="text" name="military_discharge" placeholder="e.g. Honorable" />
+              </div>
+              <div class="app-field full">
+                <label>Duties / Special Training</label>
+                <input type="text" name="military_duties" placeholder="Describe your duties and any special training" />
+              </div>
+            </div>
+          </div>
+
+          <!-- ── SECTION 5: EDUCATION ── -->
+          <div class="app-section">
+            <div class="app-section-title">🎓 Education</div>
+            <div class="app-grid" style="gap:0.8rem;">
+              <div class="app-yes-no">
+                <span class="app-yes-no-q">Do you have a High School Diploma?</span>
+                <div class="app-yes-no-btns">
+                  <label><input type="radio" name="hs_diploma" value="Yes" /> Yes</label>
+                  <label><input type="radio" name="hs_diploma" value="No" /> No</label>
+                </div>
+              </div>
+            </div>
+            <div class="app-grid app-grid-2" style="margin-top:1rem;">
+              <div class="app-field">
+                <label>High School Name</label>
+                <input type="text" name="hs_name" placeholder="School name" />
+              </div>
+              <div class="app-field">
+                <label>City / State / Zip</label>
+                <input type="text" name="hs_location" placeholder="City, State ZIP" />
+              </div>
+              <div class="app-field full">
+                <label>School Address</label>
+                <input type="text" name="hs_address" placeholder="Street Address" />
+              </div>
+            </div>
+
+            <div class="app-grid" style="gap:0.8rem;margin-top:1.2rem;">
+              <div class="app-yes-no">
+                <span class="app-yes-no-q">Did you attend college?</span>
+                <div class="app-yes-no-btns">
+                  <label><input type="radio" name="college" value="Yes" /> Yes</label>
+                  <label><input type="radio" name="college" value="No" /> No</label>
+                </div>
+              </div>
+            </div>
+            <div class="app-grid app-grid-2" style="margin-top:1rem;">
+              <div class="app-field">
+                <label>College Name</label>
+                <input type="text" name="college_name" placeholder="College / University name" />
+              </div>
+              <div class="app-field">
+                <label>City / State / Zip</label>
+                <input type="text" name="college_location" placeholder="City, State ZIP" />
+              </div>
+              <div class="app-field full">
+                <label>School Address</label>
+                <input type="text" name="college_address" placeholder="Street Address" />
+              </div>
+            </div>
+          </div>
+
+          <!-- ── SECTION 6: CRIMINAL HISTORY ── -->
+          <div class="app-section">
+            <div class="app-section-title">⚖️ Criminal History</div>
+            <div class="app-grid" style="gap:0.8rem;">
+              <div class="app-yes-no">
+                <span class="app-yes-no-q">Have you ever been convicted or pled guilty to a Misdemeanor in the past 10 years?</span>
+                <div class="app-yes-no-btns">
+                  <label><input type="radio" name="misdemeanor" value="Yes" /> Yes</label>
+                  <label><input type="radio" name="misdemeanor" value="No" /> No</label>
+                </div>
+              </div>
+              <div class="app-yes-no">
+                <span class="app-yes-no-q">Have you ever been convicted or pled guilty to a Felony in the past 10 years?</span>
+                <div class="app-yes-no-btns">
+                  <label><input type="radio" name="felony" value="Yes" /> Yes</label>
+                  <label><input type="radio" name="felony" value="No" /> No</label>
+                </div>
+              </div>
+              <div class="app-yes-no">
+                <span class="app-yes-no-q">Has your license ever been revoked or suspended?</span>
+                <div class="app-yes-no-btns">
+                  <label><input type="radio" name="license_revoked" value="Yes" /> Yes</label>
+                  <label><input type="radio" name="license_revoked" value="No" /> No</label>
+                </div>
+              </div>
+              <div class="app-field" style="max-width:300px;">
+                <label>Parking tickets in the past 3 years</label>
+                <input type="number" name="parking_tickets" placeholder="0" min="0" />
+              </div>
+              <div class="app-yes-no">
+                <span class="app-yes-no-q">Do you have any warrants in this state or any other?</span>
+                <div class="app-yes-no-btns">
+                  <label><input type="radio" name="warrants" value="Yes" /> Yes</label>
+                  <label><input type="radio" name="warrants" value="No" /> No</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── SECTION 7: REFERENCES ── -->
+          <div class="app-section">
+            <div class="app-section-title">👥 References</div>
+
+            <div class="app-grid app-grid-2">
+              <div class="app-field"><label>Reference #1 — Name</label><input type="text" name="ref1_name" placeholder="Full Name" /></div>
+              <div class="app-field"><label>Phone Number</label><input type="tel" name="ref1_phone" placeholder="(XXX) XXX-XXXX" /></div>
+              <div class="app-field"><label>Occupation</label><input type="text" name="ref1_occupation" placeholder="Job title / field" /></div>
+              <div class="app-field"><label>Relationship</label><input type="text" name="ref1_relationship" placeholder="e.g. Former Supervisor" /></div>
+            </div>
+
+            <div class="app-grid app-grid-2" style="margin-top:1rem;">
+              <div class="app-field"><label>Reference #2 — Name</label><input type="text" name="ref2_name" placeholder="Full Name" /></div>
+              <div class="app-field"><label>Phone Number</label><input type="tel" name="ref2_phone" placeholder="(XXX) XXX-XXXX" /></div>
+              <div class="app-field"><label>Occupation</label><input type="text" name="ref2_occupation" placeholder="Job title / field" /></div>
+              <div class="app-field"><label>Relationship</label><input type="text" name="ref2_relationship" placeholder="e.g. Colleague" /></div>
+            </div>
+
+            <div class="app-grid app-grid-2" style="margin-top:1rem;">
+              <div class="app-field"><label>Reference #3 — Name</label><input type="text" name="ref3_name" placeholder="Full Name" /></div>
+              <div class="app-field"><label>Phone Number</label><input type="tel" name="ref3_phone" placeholder="(XXX) XXX-XXXX" /></div>
+              <div class="app-field"><label>Occupation</label><input type="text" name="ref3_occupation" placeholder="Job title / field" /></div>
+              <div class="app-field"><label>Relationship</label><input type="text" name="ref3_relationship" placeholder="e.g. Friend" /></div>
+            </div>
+          </div>
+
+          <!-- ── SECTION 8: EMERGENCY CONTACT ── -->
+          <div class="app-section">
+            <div class="app-section-title">🚨 Emergency Contact</div>
+            <div class="app-grid app-grid-3">
+              <div class="app-field">
+                <label>Full Name *</label>
+                <input type="text" name="emergency_name" placeholder="Full Name" required />
+              </div>
+              <div class="app-field">
+                <label>Phone Number *</label>
+                <input type="tel" name="emergency_phone" placeholder="(XXX) XXX-XXXX" required />
+              </div>
+              <div class="app-field">
+                <label>Relationship</label>
+                <input type="text" name="emergency_relationship" placeholder="e.g. Spouse, Parent" />
+              </div>
+            </div>
+          </div>
+
+          <!-- ── SECTION 9: AGREEMENT & SIGNATURE ── -->
+          <div class="app-section">
+            <div class="app-section-title">✍️ Applicant Agreement</div>
+            <div class="app-agreement">
+              This application is active for <strong>45 days</strong> from the date of submission. I certify that all statements made in this application are true and complete to the best of my knowledge. I understand that any false statements are grounds for immediate dismissal. Employment requires full compliance with all CPA rules and procedures. This application does not constitute an employment agreement. By submitting, I consent to a background and reference investigation.
+            </div>
+            <div class="app-grid app-grid-2">
+              <div class="app-field">
+                <label>Full Name (Electronic Signature) *</label>
+                <input type="text" name="signature" placeholder="Type your full legal name" required />
+              </div>
+              <div class="app-field">
+                <label>Today's Date *</label>
+                <input type="date" name="signature_date" required />
+              </div>
+            </div>
+          </div>
+
+          <!-- SUBMIT -->
+          <div class="app-submit-wrap">
+            <button type="submit" class="btn-primary" style="font-size:1.1rem;padding:1rem 3rem;">
+              Submit Application
+            </button>
+            <p>Your application will be sent directly to <strong style="color:var(--gold);">cpagency23@outlook.com</strong></p>
+          </div>
+
+        </form>
+
+        <div id="app-confirmation" class="hidden" style="text-align:center;padding:3rem;background:var(--navy-light);border:1px solid var(--border);border-radius:8px;margin-top:1rem;">
+          <div style="font-size:3rem;margin-bottom:1rem;">✅</div>
+          <h3 style="color:var(--gold);font-size:1.5rem;margin:0 0 0.75rem;">Application Submitted!</h3>
+          <p style="color:var(--muted);">Thank you for applying to Certified Protection Agency. Our hiring team will review your application and be in touch shortly.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="section-inner">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="index.html" class="brand">
+            <img src="images/cpalogo2.jpeg" alt="Certified Protection Agency Logo" class="brand-logo" />
+            <div class="brand-text">
+              <span class="brand-name">Certified Protection Agency</span>
+              <span class="brand-tag">Prompt &amp; Reliable</span>
+            </div>
+          </a>
+          <p>Professional security services for families, businesses, and communities across the Dallas Fort Worth area. Prompt, reliable, and always there when you need us.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About CPA</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="apply.html">Apply Now</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <address>
+            8204 Elmbrook Dr, Ste. 320<br />
+            Dallas TX 75247<br /><br />
+            <a href="tel:2143779391">214-377-9391</a><br />
+            <a href="mailto:cpagency23@outlook.com">cpagency23@outlook.com</a>
+          </address>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Certified Protection Agency. All rights reserved.</p>
+        <span class="license">TxDPS Licensed · C28514701</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    const appForm = document.getElementById('app-form');
+    const appConfirm = document.getElementById('app-confirmation');
+    if (appForm && appConfirm) {
+      appForm.addEventListener('submit', () => {
+        setTimeout(() => {
+          appConfirm.classList.remove('hidden');
+          appForm.style.display = 'none';
+        }, 800);
+      });
+    }
+  </script>
+</body>
+</html>
