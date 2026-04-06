@@ -31,6 +31,44 @@ if (form && confirmation) {
   });
 }
 
+// Reviews Carousel
+const track = document.getElementById('review-track');
+const dotsWrap = document.getElementById('review-dots');
+
+if (track) {
+  const slides = track.querySelectorAll('.review-slide');
+  const total = slides.length;
+  let current = 0;
+  let autoTimer;
+
+  // Build dots
+  slides.forEach((_, i) => {
+    const dot = document.createElement('button');
+    dot.className = 'review-dot' + (i === 0 ? ' active' : '');
+    dot.setAttribute('aria-label', `Review ${i + 1}`);
+    dot.addEventListener('click', () => goTo(i));
+    dotsWrap.appendChild(dot);
+  });
+
+  function goTo(index) {
+    current = (index + total) % total;
+    track.style.transform = `translateX(-${current * 100}%)`;
+    dotsWrap.querySelectorAll('.review-dot').forEach((d, i) =>
+      d.classList.toggle('active', i === current)
+    );
+  }
+
+  document.querySelector('.review-prev')?.addEventListener('click', () => { goTo(current - 1); resetTimer(); });
+  document.querySelector('.review-next')?.addEventListener('click', () => { goTo(current + 1); resetTimer(); });
+
+  function resetTimer() {
+    clearInterval(autoTimer);
+    autoTimer = setInterval(() => goTo(current + 1), 5000);
+  }
+
+  resetTimer();
+}
+
 // Sticky header shadow on scroll
 const header = document.querySelector('.site-header');
 if (header) {
