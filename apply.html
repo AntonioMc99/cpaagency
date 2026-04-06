@@ -80,6 +80,7 @@
           action="https://formspree.io/f/xykbdgnj"
           method="POST"
           enctype="multipart/form-data"
+          autocomplete="off"
         >
           <!-- Hidden routing -->
           <input type="hidden" name="_subject" value="New CPA Employee Application" />
@@ -107,7 +108,7 @@
             <div class="app-grid app-grid-2" style="margin-top:1rem;">
               <div class="app-field">
                 <label>Email *</label>
-                <input type="email" name="email" placeholder="your@email.com" required />
+                <input type="email" name="email" placeholder="your@email.com" required autocomplete="off" />
               </div>
               <div class="app-field">
                 <label>Phone Number *</label>
@@ -115,7 +116,7 @@
               </div>
               <div class="app-field">
                 <label>Social Security Number</label>
-                <input type="text" name="ssn" placeholder="XXX-XX-XXXX" />
+                <input type="text" name="ssn" placeholder="XXX-XX-XXXX" autocomplete="off" />
               </div>
               <div class="app-field">
                 <label>Date of Birth</label>

@@ -128,12 +128,12 @@
           <h3>Send Us a Message</h3>
           <p>Fill out the form and an agent will reach out to you shortly.</p>
 
-          <form class="contact-form" id="contact-form" action="https://formspree.io/f/xpqojalk" method="POST">
+          <form class="contact-form" id="contact-form" action="https://formspree.io/f/xpqojalk" method="POST" autocomplete="off">
             <div class="form-row">
-              <input type="text" name="name" placeholder="Your Name *" required />
-              <input type="email" name="email" placeholder="Your Email *" required />
+              <input type="text" name="name" placeholder="Your Name *" required autocomplete="off" />
+              <input type="email" name="email" placeholder="Your Email *" required autocomplete="off" />
             </div>
-            <input type="tel" name="phone" placeholder="Phone Number" />
+            <input type="tel" name="phone" placeholder="Phone Number" autocomplete="off" />
             <select name="service">
               <option value="" disabled selected>Select a Service</option>
               <option value="escort">Personal Escort</option>
