@@ -17,17 +17,29 @@ document.querySelectorAll('.mobile-menu a').forEach(link => {
   });
 });
 
-// Contact form — show confirmation on submit
+// Contact form — submit via FormSubmit AJAX
 const form = document.getElementById('contact-form');
 const confirmation = document.getElementById('form-confirmation');
 
 if (form && confirmation) {
-  form.addEventListener('submit', (e) => {
-    // Formspree handles the actual POST — we just show a message after a moment
-    setTimeout(() => {
-      confirmation.classList.remove('hidden');
-      form.reset();
-    }, 800);
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const data = new FormData(form);
+    data.append('_subject', 'New Contact Form Submission - CPA');
+    data.append('_captcha', 'false');
+    try {
+      const res = await fetch('https://formsubmit.co/ajax/Info@cprotectionagency.com', {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      });
+      if (res.ok) {
+        confirmation.classList.remove('hidden');
+        form.reset();
+      }
+    } catch (_) {
+      // silently fail — user can email directly
+    }
   });
 }
 
