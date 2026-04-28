@@ -103,7 +103,7 @@ img { max-width: 100%; height: auto; display: block; }
   background: var(--navy);
   border-bottom: 1px solid var(--border);
   font-size: 0.85rem;
-  color: var(--muted);
+  color: var(--white);
 }
 
 .topbar .wrap {
@@ -122,7 +122,7 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .topbar-links a {
-  color: var(--muted);
+  color: var(--white);
   text-decoration: none;
   transition: color 0.3s;
   display: flex;
