@@ -28,7 +28,8 @@ if (form && confirmation) {
     data.append('_subject', 'New Contact Form Submission - CPA');
     data.append('_captcha', 'false');
     try {
-      const res = await fetch('https://formsubmit.co/ajax/Info@cprotectionagency.com', {
+      data.append('access_key', 'cbd92014-2f3f-4d7e-856f-3a3fdfe5cc47');
+      const res = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         body: data,
         headers: { 'Accept': 'application/json' }
